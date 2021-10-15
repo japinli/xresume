@@ -1,0 +1,149 @@
+\documentclass[10pt,a4paper]{xresume}
+
+% Change the font if you want to.
+%\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+\definecolor{VividPurple}{HTML}{2E64FE}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\name{张三}
+\tagline{DBA \& Developer}
+\photo{2.5cm}{me}
+
+\personalinfo{
+  \location{四川 \textbullet{} 成都}
+  \phone{199-1234-5678}
+  \email{sangzhang@hotmail.com}\\
+  % Uncomment the following if you are female.
+  % \female{}
+  \birth{1993-11-29}
+  \github{github.com/sanzhang}
+  \blog{\href{https://www.baidu.com/s?wd=sangzhang}{www.sanzhang.com}}
+}
+
+\begin{document}
+
+\begin{adjustwidth}{}{}
+  \makecvheader{}
+\end{adjustwidth}
+
+\divider\vspace{-0.5cm}
+
+\begin{minipage}[t]{0.3\textwidth}
+  \cvsection{\faCogs{}专业技能}
+  \cvskill{C}{5}
+  \cvskill{C++}{3}
+  \cvskill{Go}{2}
+  \cvskill{Python}{3}
+  \cvskill{SQL}{4}
+  \cvskill{Shell}{4}
+  \cvskill{\LaTeX{}}{3}
+
+  \divider\smallskip
+  
+  \cvtag{PostgreSQL}
+  \cvtag{Greenplum}
+  \cvtag{GCC}
+  \cvtag{Git}
+  \cvtag{GDB}
+  \cvtag{Linux}
+  \cvtag{MacOS}
+  \cvtag{Windows}
+  \cvtag{Emacs}
+  \cvtag{Vim}
+
+  \cvsection{\faCertificate{}证书 \& 奖项}
+  \cvtag{Bilibili大学优秀毕业生}
+  \cvtag{英语六级}
+
+  \cvsection{\faGraduationCap{}教育背景}
+  \cvevent{计算机技术 \textbullet{} 硕士}{Bilibili大学}{2014.09 \textendash{} 2017.06}{}
+  \divider{}
+  \cvevent{土木工程 \textbullet{} 学士}{家里蹲大学}{2010.09 \textendash{} 2014.06}{}
+  
+  \cvsection{\faLanguage{}语言}
+  \cvskill{中文}{5}
+  \cvskill{英语}{4}
+\end{minipage}
+% Do not keep a blank line here.
+\hfill%
+% Do not keep a blank line here.
+\begin{minipage}[t]{0.66\textwidth}
+
+  \cvsection{\faClockO{}工作经历}
+
+  \cvjob{高级软件工程师}{XXX科技有限公司}{2021.03 \textendash{} 现在}{四川\textbullet{}成都}
+  \begin{itemize}
+  \item 负责XXX的设计与开发
+  \item 负责XXX的开发
+  \end{itemize}
+  
+  \divider{}
+
+  \cvjob{软件工程师}{XXX技术有限公司}{2019.12 \textendash{} 2021.02}{四川\textbullet{}成都}
+  \begin{itemize}
+  \item 负责XXX的开发
+  \item 实现了XXX功能
+  \end{itemize}
+
+  \divider{}
+
+  \cvjob{实习软件开发}{BBB技术有限公司}{2018.10 \textendash{} 2019.02}{四川\textbullet{}成都}
+  \begin{itemize}
+  \item 负责XXX的开发
+  \item 完成了XXX工作
+  \end{itemize}
+
+  \cvsection{\faGithubAlt{}开源贡献}
+  \cvopensource{XXX开源项目}
+  \begin{itemize}
+  \item 修复XXX的BUG
+  \item 增加了XXX功能
+  \end{itemize}
+
+  \divider{}
+
+  \cvopensource{XXX开源项目}
+  \begin{itemize}
+  \item 实现XXX功能
+  \item 提交XXX的BUG
+  \end{itemize}
+
+\end{minipage}
+
+\newpage
+
+\cvsection{\faCubes{}项目经验}
+
+\cvproject{XXX项目}{XXX技术有限公司}{Golang, Linux}{2021.06 \textendash{} 现在}
+\begin{itemize}
+\item 实现了XXX功能
+\end{itemize}
+
+\divider{}
+\cvproject{XXX迁移项目}
+          {XXX科技有限公司}
+          {Oracle, PostgreSQL, ora2pg}
+          {2021.03 \textendash{} 2021.06}
+\begin{itemize}
+\item 完成XXX迁移工作
+\end{itemize}
+
+\divider{}
+
+\cvproject{基于 \LaTeX{} 的简历模版}
+          {个人项目}
+          {\LaTeX{}}{2021.10 \textendash{} 现在}
+\begin{itemize}
+\item 基于 \href{https://www.overleaf.com/articles/grant-morgans-first-latex-resume/jtdbtcctgnrr}{Grant Morgan} 和 \href{https://www.overleaf.com/articles/peter-rasmussens-resume-data-scientist/bphkfprrcnwv}{Peter Rasmussen} 的 \LaTeX{} 模版开发
+\item 添加中文支持
+\item 采用 Peter Rasmussen 简历模版中的方式对页面进行分栏
+\item 增加 \verb|\cvjob|，\verb|\cvproject|，\verb|\cvopensource| 等命令来细化各个部分的输出
+\end{itemize}
+
+\end{document}
