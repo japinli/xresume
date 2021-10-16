@@ -15,6 +15,8 @@
 % Specifies horizontal and vertical page margins.
 \RequirePackage[margin=2cm]{geometry}
 \RequirePackage{fontspec} % Required for specifying custom fonts in XeLaTeX
+% https://github.com/ReScience/ReScience-submission/issues/32
+\defaultfontfeatures{Extension = .otf}
 \RequirePackage{fontawesome}
 \RequirePackage{xcolor} % Required for custom colors.
 \RequirePackage[UTF8]{ctex}
