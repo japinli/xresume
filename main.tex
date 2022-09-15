@@ -18,12 +18,12 @@
 \personalinfo{
   \location{四川 \textbullet{} 成都}
   \phone{199-1234-5678}
-  \email{sangzhang@hotmail.com}\\
+  \email{japinli@hotmail.com}\\
   % Uncomment the following if you are female.
   % \female{}
   \birth{1993-11-29}
-  \github{github.com/sanzhang}
-  \blog{\href{https://www.baidu.com/s?wd=sangzhang}{www.sanzhang.com}}
+  \github{github.com/japinli}
+  \blog{\href{https://blog.japinli.top}{blog.japinli.top}}
 }
 
 \begin{document}
@@ -45,7 +45,7 @@
   \cvskill{\LaTeX{}}{3}
 
   \divider\smallskip
-  
+
   \cvtag{PostgreSQL}
   \cvtag{Greenplum}
   \cvtag{GCC}
@@ -65,7 +65,7 @@
   \cvevent{计算机技术 \textbullet{} 硕士}{Bilibili大学}{2014.09 \textendash{} 2017.06}{}
   \divider{}
   \cvevent{土木工程 \textbullet{} 学士}{家里蹲大学}{2010.09 \textendash{} 2014.06}{}
-  
+
   \cvsection{\faLanguage{}语言}
   \cvskill{中文}{5}
   \cvskill{英语}{4}
@@ -82,7 +82,7 @@
   \item 负责XXX的设计与开发
   \item 负责XXX的开发
   \end{itemize}
-  
+
   \divider{}
 
   \cvjob{软件工程师}{XXX技术有限公司}{2019.12 \textendash{} 2021.02}{四川\textbullet{}成都}
@@ -99,51 +99,65 @@
   \item 完成了XXX工作
   \end{itemize}
 
-  \cvsection{\faGithubAlt{}开源贡献}
-  \cvopensource{XXX开源项目}
-  \begin{itemize}
-  \item 修复XXX的BUG
-  \item 增加了XXX功能
-  \end{itemize}
-
   \divider{}
 
-  \cvopensource{XXX开源项目}
+  \cvjob{实习软件开发}{BBB技术有限公司}{2017.07 \textendash{} 2018.10}{四川\textbullet{}成都}
   \begin{itemize}
-  \item 实现XXX功能
-  \item 提交XXX的BUG
+  \item 负责XXX的开发
+  \item 完成了XXX工作
+  \end{itemize}
+
+  \cvsection{\faGithubAlt{}开源贡献}
+  \cvopensource{\href{https://git.postgresql.org/gitweb/?p=postgresql.git&a=search&h=HEAD&st=commit&s=japin}{PostgreSQL}}
+  \begin{itemize}
+  \item \href{https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=641f3dffcdf1c7378cfb94c98b6642793181d6db}{恢复 get\_constraint\_index() 函数语义}
+  \item \href{https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=bd74c4037c4ee268db46e983bcc0f1e0a9f7ab72}{修复自定义参数不能以下划线开始的问题}
+  \item \href{https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=89f059bdf52cc9a86b890d42ceed92237123479e}{移除 BeginCopyFrom() 中不必要的内存上下文切换}
+  \item \href{https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=f3d4019da5d026f2c3fe5bd258becf6fbb6b4673}{修复逻辑复制中日期和float不一致导致的复制异常}
+  \item \href{https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=82ed7748b710e3ddce3f7ebc74af80fe4869492f}{添加 ALTER SUBSCRIPTION ... ADD/DROP ... 语法}
+  \item \href{https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=5c0f7cc5442108e113d4fb88c952329b467e2c6a}{修复 contrib/auto\_explain 中的内存泄露}
+  \item \href{https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=40ab64c1ec1cb9bd73695f519cf66ddbb97d8144}{修复逻辑复制删除表后刷新异常的问题}
+  \item \href{https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=9877374bef76ef03923f6aa8b955f2dbcbe6c2c7}{添加 idle\_session\_timeout 功能}
   \end{itemize}
 
 \end{minipage}
 
 \newpage
 
+\cvsection{\faGithubAlt{}开源贡献}
+
+\cvopensource{
+  \href{https://github.com/greenplum-db/gpdb/search?q=japinli&type=issues}{Greenplum} \&
+  \href{https://github.com/greenplum-db/gporca/search?q=japinli&type=issues}{gporca} \&
+  \href{https://github.com/greenplum-db/gpbackup/search?q=japinli&type=issues}{gpbackup}}
+\begin{itemize}
+\item \href{https://github.com/greenplum-db/gpdb/commit/75283bc70e9783f9197cd141464941f5bbf09967}{修复 gpdb 中 pgrowlocks 未初始化变量导致的编译错误}
+\item \href{https://github.com/greenplum-db/gporca/commit/6258ef0743ef685d9f8fc529a629fb92eb512289}{提供 gporca 在 aarch64 平台上的支持}
+\item \href{https://github.com/greenplum-db/gporca/commit/54ce8b3c0de2c63a5ea8eee8c2ce5d513214eba7}{修复 gporca 在 Solaris 平台上的编译错误}
+\item \href{https://github.com/greenplum-db/gpbackup/commit/e28df4dfcf6f208134c8be69c22258220c333471}{修复 gpbackup 在 Solaris 平台上由于 syscall 导致的测试问题}
+\item \href{https://github.com/greenplum-db/gpbackup/commit/fa25bf640e3ad80f2d2be3aca775bf238c627d8f}{修复 gpbackup 单元测试清理问题}
+\item \href{https://github.com/greenplum-db/gpbackup/commit/2843de46e509b8485ce11095d73d7ea7964ed390}{修复测试程序中 GOPATH 路径问题}
+\end{itemize}
+
 \cvsection{\faCubes{}项目经验}
 
-\cvproject{XXX项目}{XXX技术有限公司}{Golang, Linux}{2021.06 \textendash{} 现在}
-\begin{itemize}
-\item 实现了XXX功能
-\end{itemize}
-
-\divider{}
-\cvproject{XXX迁移项目}
-          {XXX科技有限公司}
-          {Oracle, PostgreSQL, ora2pg}
-          {2021.03 \textendash{} 2021.06}
-\begin{itemize}
-\item 完成XXX迁移工作
-\end{itemize}
-
-\divider{}
-
-\cvproject{基于 \LaTeX{} 的简历模版}
+\cvproject{\href{https://github.com/japinli/pg_node2graph}{pg\_node2graph}}
           {个人项目}
-          {\LaTeX{}}{2021.10 \textendash{} 现在}
+          {C++, Graphviz}{2022.08 \textendash{} 现在}
 \begin{itemize}
-\item 基于 \href{https://www.overleaf.com/articles/grant-morgans-first-latex-resume/jtdbtcctgnrr}{Grant Morgan} 和 \href{https://www.overleaf.com/articles/peter-rasmussens-resume-data-scientist/bphkfprrcnwv}{Peter Rasmussen} 的 \LaTeX{} 模版开发
-\item 添加中文支持
-\item 采用 Peter Rasmussen 简历模版中的方式对页面进行分栏
+\item 将 PostgreSQL 的字符节点树转化成图片
+\end{itemize}
+
+\divider{}
+
+\cvproject{\href{https://github.com/japinli/xresume}{基于 \LaTeX{} 的简历模版}}
+          {个人项目}
+          {\LaTeX{}，MacOS}{2021.10 \textendash{} 现在}
+\begin{itemize}
+\item 基于 \href{https://www.overleaf.com/articles/grant-morgans-first-latex-resume/jtdbtcctgnrr}{Grant Morgan} 和 \href{https://www.overleaf.com/articles/peter-rasmussens-resume-data-scientist/bphkfprrcnwv}{Peter Rasmussen} 的 \LaTeX{} 模版二次开发
 \item 增加 \verb|\cvjob|，\verb|\cvproject|，\verb|\cvopensource| 等命令来细化各个部分的输出
+\item 采用 Peter Rasmussen 简历模版中的方式对页面进行分栏
+\item 添加中文支持
 \end{itemize}
 
 \end{document}

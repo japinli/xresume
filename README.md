@@ -7,7 +7,7 @@
 
 ## 示例
 
-![Example](./main.jpg)
+![Example](./main.png)
 
 [1]: https://www.overleaf.com/articles/grant-morgans-first-latex-resume/jtdbtcctgnrr
 [2]: https://www.overleaf.com/articles/peter-rasmussens-resume-data-scientist/bphkfprrcnwv
